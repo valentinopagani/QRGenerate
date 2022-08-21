@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.arrow {
+  width: 150px;
+  position: absolute;
+  top: 85px;
+  right: -100px;
+  animation: arrowAnimation 5s infinite;
+}
+
+@keyframes arrowAnimation {
+  0% {
+    rotate: 20deg;
+  }
+  40% {
+    rotate: 0deg;
+  }
+  60% {
+    rotate: 20deg;
+  }
+  100% {
+    rotate: 20deg;
+  }
+}
+
+.contenedor {
+  max-width: 90%;
+  width: 400px;
+  margin: 100px auto;
+  position: relative;
+}
+
+.formulario input[type="text"] {
+  padding: 10px;
+  border: 1px solid #aaa;
+  background: #eee;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.formulario .btn {
+  width: 100%;
+  border: none;
+  background: #0077ff;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.contenedorQR {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
